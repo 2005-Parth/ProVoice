@@ -113,17 +113,10 @@ const userSchema = new Schema(
         ref: "Achievement",
       },
     ],
-    // connections: [userIDs: accepted(true/false)]
     connections: [
       {
-        user: {
-          type: Schema.Types.ObjectId,
-          ref: "User",
-        },
-        accepted: {
-          type: Boolean,
-          required: true,
-        },
+        type: Schema.Types.ObjectId,
+        ref: "User",
       },
     ],
   },

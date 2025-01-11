@@ -1,0 +1,25 @@
+|-- .env
+|-- .gitignore
+|-- apiResponses
+    |-- userResponses.json
+|-- app.js
+|-- controllers
+    |-- readme.md
+    |-- userControllers.js
+|-- index.js
+|-- models
+    |-- achievementModel.js
+    |-- commentModel.js
+    |-- groupModel.js
+    |-- models.js
+    |-- postModel.js
+    |-- userModel.js
+|-- package-lock.json
+|-- package.json
+|-- routes
+    |-- readme.md
+    |-- userRoutes.js
+|-- routes.js
+|-- utils
+    |-- db.js
+    |-- emailService.js
