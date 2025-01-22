@@ -1,0 +1,1202 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      // Application name
+      title: 'Flutter Hello World',
+      // Application theme data, you can set the colors for the application as
+      // you want
+      theme: ThemeData(
+        // useMaterial3: false,
+        primarySwatch: Colors.blue,
+      ),
+      // A widget which will be started on application startup
+      home:
+    );
+  }
+}
+class Profile extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Container(
+          width: 414,
+          height: 1683,
+          clipBehavior: Clip.antiAlias,
+          decoration: ShapeDecoration(
+            gradient: LinearGradient(
+              begin: Alignment(0.00, -1.00),
+              end: Alignment(0, 1),
+              colors: [Color(0xFFFFEBEE), Colors.white],
+            ),
+            shape: RoundedRectangleBorder(side: BorderSide(width: 1)),
+            shadows: [
+              BoxShadow(
+                color: Color(0x3F000000),
+                blurRadius: 4,
+                offset: Offset(0, 4),
+                spreadRadius: 0,
+              )
+            ],
+          ),
+          child: Stack(
+            children: [
+              Positioned(
+                left: 153,
+                top: 1112,
+                child: Container(
+                  width: 103,
+                  height: 27,
+                  decoration: ShapeDecoration(
+                    color: Color(0xFFFF8A65),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 12,
+                top: 70,
+                child: Container(
+                  width: 390,
+                  height: 226,
+                  decoration: ShapeDecoration(
+                    color: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 142,
+                top: 82,
+                child: Container(
+                  width: 130,
+                  height: 130,
+                  decoration: ShapeDecoration(
+                    color: Color(0xFF3F0E00),
+                    shape: OvalBorder(),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 144,
+                top: 84,
+                child: Container(
+                  width: 126,
+                  height: 126,
+                  decoration: ShapeDecoration(
+                    color: Colors.white,
+                    shape: OvalBorder(),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 109,
+                top: 218,
+                child: Text.rich(
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: 'Jash Bohare\n',
+                        style: TextStyle(
+                          color: Color(0xFF3F0E00),
+                          fontSize: 18,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      TextSpan(
+                        text: 'Founder, ProVoice Connect',
+                        style: TextStyle(
+                          color: Color(0xFF3F0E00),
+                          fontSize: 15,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                    ],
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              Positioned(
+                left: 15,
+                top: 268,
+                child: Text(
+                  'Creating meaningful networks, one bond at a time 💬✨',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 14,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 157,
+                top: 310,
+                child: Container(
+                  width: 100,
+                  height: 74,
+                  decoration: ShapeDecoration(
+                    color: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(width: 1, color: Color(0xFF3F0E00)),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 35,
+                top: 310,
+                child: Container(
+                  width: 100,
+                  height: 74,
+                  decoration: ShapeDecoration(
+                    color: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(width: 1, color: Color(0xFF3F0E00)),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 279,
+                top: 310,
+                child: Container(
+                  width: 100,
+                  height: 74,
+                  decoration: ShapeDecoration(
+                    color: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(width: 1, color: Color(0xFF3F0E00)),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 144,
+                top: 84,
+                child: Container(
+                  width: 126,
+                  height: 126,
+                  decoration: ShapeDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/126x126"),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: OvalBorder(),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 52,
+                top: 352,
+                child: SizedBox(
+                  width: 71,
+                  height: 18,
+                  child: Text(
+                    'Followers',
+                    style: TextStyle(
+                      color: Color(0xFF808080),
+                      fontSize: 15,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 186,
+                top: 353,
+                child: Text(
+                  'Bonds',
+                  style: TextStyle(
+                    color: Color(0xFF808080),
+                    fontSize: 15,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 304,
+                top: 353,
+                child: Text(
+                  'Circles',
+                  style: TextStyle(
+                    color: Color(0xFF808080),
+                    fontSize: 15,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 68,
+                top: 319,
+                child: Text(
+                  '4k',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 26,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 190,
+                top: 318,
+                child: Text(
+                  '4k',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 26,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 316,
+                top: 318,
+                child: Text(
+                  '14',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 26,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 12,
+                top: 439,
+                child: Container(
+                  width: 390,
+                  height: 138,
+                  decoration: ShapeDecoration(
+                    color: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(width: 1, color: Color(0xFF3F0E00)),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 22,
+                top: 408,
+                child: Text(
+                  '👤 A Bit About Me',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 20,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 22,
+                top: 448,
+                child: SizedBox(
+                  width: 373,
+                  height: 132,
+                  child: Text(
+                    'Startup enthusiast | Tech nerd 🤓 | Networking wizard 🪄                    I’m all about solving real problems—bridging industry gaps, enhancing employability, and connecting like-minded professionals. And yes, chai fuels my ideas ☕.',
+                    style: TextStyle(
+                      color: Color(0xFF3F0E00),
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w400,
+                      height: 1.25,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 12,
+                top: 632,
+                child: Container(
+                  width: 390,
+                  height: 125,
+                  decoration: ShapeDecoration(
+                    color: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(width: 1, color: Color(0xFF3F0E00)),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 22,
+                top: 601,
+                child: Text(
+                  '🌟 Current Focus',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 20,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 22,
+                top: 640,
+                child: SizedBox(
+                  width: 320,
+                  height: 31,
+                  child: Text(
+                    'Rolling out the ProVoice Connect MVP 📲\n\n',
+                    style: TextStyle(
+                      color: Color(0xFF3F0E00),
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w400,
+                      height: 1.25,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 22,
+                top: 726,
+                child: SizedBox(
+                  width: 367,
+                  height: 31,
+                  child: Text(
+                    'Exploring AI to make networking smarter 🤖\n\n',
+                    style: TextStyle(
+                      color: Color(0xFF3F0E00),
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w400,
+                      height: 1.25,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 22,
+                top: 673,
+                child: SizedBox(
+                  width: 373,
+                  height: 44,
+                  child: Text(
+                    'Building communities for impactful conversations 🗨️\n\n',
+                    style: TextStyle(
+                      color: Color(0xFF3F0E00),
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w400,
+                      height: 1.25,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 12,
+                top: 1401,
+                child: Container(
+                  width: 390,
+                  height: 178,
+                  decoration: ShapeDecoration(
+                    color: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(width: 1),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 28,
+                top: 1374,
+                child: Text(
+                  '🎯 Goals & Dreams',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 20,
+                    fontFamily: 'Inter',
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 22,
+                top: 1409,
+                child: SizedBox(
+                  width: 373,
+                  height: 163,
+                  child: Text(
+                    '🌱 Launch ProVoice across 3 countries by 2026.\n                    📈 Help 10,000+ users create purposeful connections.\n                    🌍 Build a global community where knowledge flows freely.',
+                    style: TextStyle(
+                      color: Color(0xFF3F0E00),
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w400,
+                      height: 1.25,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 12,
+                top: 183,
+                child: Container(
+                  width: 143,
+                  height: 1,
+                  decoration: BoxDecoration(color: Color(0xFF3F0E00)),
+                ),
+              ),
+              Positioned(
+                left: 259,
+                top: 183,
+                child: Container(
+                  width: 143,
+                  height: 1,
+                  decoration: BoxDecoration(color: Color(0xFF3F0E00)),
+                ),
+              ),
+              Positioned(
+                left: 22,
+                top: 785,
+                child: Text(
+                  '💬 What I’m Sharing',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 20,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 75,
+                top: 833,
+                child: Container(
+                  width: 50,
+                  height: 50,
+                  decoration: ShapeDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/50x50"),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: OvalBorder(),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 226,
+                top: 1053,
+                child: Container(
+                  width: 24,
+                  height: 24,
+                  padding: const EdgeInsets.only(
+                    top: 3.53,
+                    left: 2.68,
+                    right: 3.53,
+                    bottom: 2.68,
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                 
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 152,
+                top: 1052,
+                child: Container(
+                  width: 28,
+                  height: 28,
+                  padding: const EdgeInsets.symmetric(horizontal: 3.50, vertical: 4.67),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                 
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 112,
+                top: 1058,
+                child: Text(
+                  '1.2k',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 10,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 252,
+                top: 1058,
+                child: Text(
+                  '1.2k',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 10,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 183,
+                top: 1058,
+                child: Text(
+                  '1.2k',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 10,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 77,
+                top: 1050,
+                child: Container(
+                  width: 33,
+                  height: 33,
+                  decoration: ShapeDecoration(
+                    color: Color(0xFFFF8A65),
+                    shape: OvalBorder(),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 75,
+                top: 1051,
+                child: Container(
+                  width: 30,
+                  height: 30,
+                  padding: const EdgeInsets.only(top: 2.22, left: 7.78, bottom: 5.56),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 22.22,
+                        height: 22.22,
+                        padding: const EdgeInsets.only(
+                          top: 1.85,
+                          left: 1.85,
+                          right: 2.15,
+                          bottom: 1.85,
+                        ),
+                        clipBehavior: Clip.antiAlias,
+                        decoration: BoxDecoration(),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                       
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 313,
+                top: 1048,
+                child: Container(
+                  width: 33,
+                  height: 33,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        top: 0,
+                        child: Container(
+                          width: 33,
+                          height: 33,
+                          decoration: ShapeDecoration(
+                            color: Color(0xFF34495E),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 5.08,
+                        top: 5.08,
+                        child: SizedBox(
+                          width: 21.32,
+                          height: 22.85,
+                          child: Text(
+                            '🚀',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 24,
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 391.78,
+                top: 820.08,
+                child: Transform(
+                  transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(0.07),
+                  child: Container(
+                    width: 59.93,
+                    height: 275,
+                    decoration: ShapeDecoration(
+                      color: Color(0xFFE5DADA),
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(width: 1, color: Color(0xFF3F0E00)),
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(10),
+                          bottomLeft: Radius.circular(10),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 27.38,
+                top: 820.08,
+                child: Transform(
+                  transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(3.07),
+                  child: Container(
+                    width: 59.93,
+                    height: 275,
+                    decoration: ShapeDecoration(
+                      color: Color(0xFFE5DADA),
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(width: 1, color: Color(0xFF3F0E00)),
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(10),
+                          bottomLeft: Radius.circular(10),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 158,
+                top: 1115,
+                child: Text(
+                  'Show all posts',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 13,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 364,
+                top: 77,
+                child: Container(
+                  width: 31,
+                  height: 31,
+                  decoration: ShapeDecoration(
+                    color: Color(0xFFFF8A65),
+                    shape: OvalBorder(),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 20,
+                top: 77,
+                child: Container(
+                  width: 31,
+                  height: 31,
+                  decoration: ShapeDecoration(
+                    color: Color(0xFFFF8A65),
+                    shape: OvalBorder(),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 60,
+                top: 77,
+                child: Container(
+                  width: 31,
+                  height: 31,
+                  decoration: ShapeDecoration(
+                    color: Color(0xFFFF8A65),
+                    shape: OvalBorder(),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 366,
+                top: 78,
+                child: Container(
+                  width: 27,
+                  height: 27,
+                  padding: const EdgeInsets.only(
+                    top: 4.97,
+                    left: 4.50,
+                    right: 4.50,
+                    bottom: 4.50,
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                 
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 23,
+                top: 80,
+                child: Container(
+                  width: 24,
+                  height: 24,
+                  padding: const EdgeInsets.only(
+                    top: 3.53,
+                    left: 2.68,
+                    right: 3.53,
+                    bottom: 2.68,
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                 
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 75,
+                top: 891,
+                child: SizedBox(
+                  width: 286,
+                  height: 151,
+                  child: Text(
+                    'Excited to introduce a platform to foster purposeful connections, bridge generational gaps, and create a collaborative community for professionals, students, and SMEs. Let’s redefine networking together! 🤝🌟',
+                    style: TextStyle(
+                      color: Color(0xFF3F0E00),
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w400,
+                      height: 1.25,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 132,
+                top: 830,
+                child: Text(
+                  'Jash Bohare',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 16,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 132,
+                top: 852,
+                child: Text(
+                  'Founder, ProVoice Connect',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 15,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 132,
+                top: 874,
+                child: Text(
+                  '22/11/24',
+                  style: TextStyle(
+                    color: Color(0xFF9AA0A6),
+                    fontSize: 12,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 12,
+                top: 1195,
+                child: Container(
+                  width: 390,
+                  height: 149,
+                  decoration: ShapeDecoration(
+                    color: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(width: 1, color: Color(0xFF3F0E00)),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 22,
+                top: 1164,
+                child: Text(
+                  '🏅 Highlights & Milestones',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 20,
+                    fontFamily: 'Inter',
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 22,
+                top: 1203,
+                child: SizedBox(
+                  width: 320,
+                  height: 31,
+                  child: Text(
+                    'Launched ProVoice Learn Blog: 1000+ readers engaged weekly.',
+                    style: TextStyle(
+                      color: Color(0xFF3F0E00),
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w400,
+                      height: 1.25,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 22,
+                top: 1313,
+                child: Text(
+                  'Top Collaborator Award: AI Innovators Circle.',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 16,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w400,
+                    height: 1.25,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 22,
+                top: 1258,
+                child: SizedBox(
+                  width: 373,
+                  height: 44,
+                  child: Text(
+                    'Speaker at Tech Fusion 2024: Shared insights on meaningful connections.',
+                    style: TextStyle(
+                      color: Color(0xFF3F0E00),
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w400,
+                      height: 1.25,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 291,
+                top: 6,
+                child: Text(
+                  'Profile',
+                  style: TextStyle(
+                    color: Color(0xFF3F0E00),
+                    fontSize: 36,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 9,
+                top: 14,
+                child: Container(
+                  width: 37,
+                  height: 37,
+                  padding: const EdgeInsets.all(6.17),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                 
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 12,
+                top: 59.98,
+                child: Container(
+                  width: 390,
+                  decoration: ShapeDecoration(
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(
+                        width: 1,
+                        strokeAlign: BorderSide.strokeAlignCenter,
+                        color: Color(0xFF9AA0A6),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 63.50,
+                top: 81,
+                child: Container(
+                  width: 24,
+                  height: 24,
+                  padding: const EdgeInsets.symmetric(horizontal: 3.34, vertical: 2.31),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                 
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 0,
+                top: 1621,
+                child: Container(
+                  width: 414,
+                  height: 62,
+                  decoration: ShapeDecoration(
+                    color: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(width: 1, color: Color(0xFF3F0E00)),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 138,
+                top: 1660,
+                child: Text(
+                  'Nexus',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 11,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 40,
+                top: 1630,
+                child: Container(
+                  width: 33,
+                  height: 47,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        top: 30,
+                        child: Text(
+                          'Home',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 11,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 0,
+                        top: 0,
+                        child: Container(
+                          width: 32,
+                          height: 32,
+                          padding: const EdgeInsets.only(
+                            top: 4.88,
+                            left: 5.33,
+                            right: 5.33,
+                            bottom: 5.33,
+                          ),
+                          clipBehavior: Clip.antiAlias,
+                          decoration: BoxDecoration(),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                         
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 238,
+                top: 1631,
+                child: Container(
+                  width: 38,
+                  height: 46,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        top: 29,
+                        child: Text(
+                          'Create',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 11,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 2,
+                        top: 0,
+                        child: Container(
+                          width: 33,
+                          height: 33,
+                          padding: const EdgeInsets.all(4.12),
+                          clipBehavior: Clip.antiAlias,
+                          decoration: BoxDecoration(),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                         
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 137,
+                top: 1629,
+                child: Container(
+                  width: 34,
+                  height: 32,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/34x32"),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 334.50,
+                top: 1627.50,
+                child: Container(
+                  width: 46,
+                  height: 46,
+                  decoration: ShapeDecoration(
+                    color: Colors.black,
+                    shape: OvalBorder(),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 337,
+                top: 1630,
+                child: Container(
+                  width: 41,
+                  height: 41,
+                  decoration: ShapeDecoration(
+                    color: Colors.white,
+                    shape: OvalBorder(),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 339,
+                top: 1632,
+                child: Container(
+                  width: 37,
+                  height: 37,
+                  decoration: ShapeDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/37x37"),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: OvalBorder(),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}

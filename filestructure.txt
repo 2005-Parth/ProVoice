@@ -1,9 +1,11 @@
 |-- .env
 |-- .gitignore
+|-- aa
 |-- apiResponses
     |-- userResponses.json
 |-- app.js
 |-- controllers
+    |-- postController.js
     |-- readme.md
     |-- userControllers.js
 |-- index.js
@@ -17,6 +19,7 @@
 |-- package-lock.json
 |-- package.json
 |-- routes
+    |-- postRoutes.js
     |-- readme.md
     |-- userRoutes.js
 |-- routes.js

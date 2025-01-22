@@ -12,7 +12,6 @@
 8. Create Achievement
 9. Update Achievement
 10. Delete Achievement
-## Group Controllers (Under Construction)
 ### grpControllers.js
 #### Functions :
 1. Create Group
